@@ -1,0 +1,149 @@
+/* Colores */
+:root {
+    --blanco: #ffffff;
+    ---negro: #000000;
+    --primario: #eb3c27;
+    --secundario: #515151;
+    --gisClaro:  #d3d3d3;
+}
+
+/* Generales */
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Nanum Gothic", sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+/* header */
+.header {
+    color: var(--blanco);
+    background-color: var(--primario);
+    display: flex;
+    flex-direction: column;
+}
+
+.navegacion {
+    background-color: var(--primario);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    border-bottom: .5px solid var(--secundario);
+}
+
+a {
+    font-size: 1.5rem;
+    color: var(--blanco);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+a:hover {
+    cursor: pointer;
+    background-color: var(--blanco);
+    color: var(---negro);
+}
+
+.hero {
+    margin: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        text-transform: uppercase;
+    }
+
+    p {
+        padding-bottom: 1rem;
+    }
+}
+
+
+
+.boton {
+    background-color: var(---negro);
+    padding: 1rem 1.5rem;
+    justify-content: center;
+}
+
+/* main */
+.contenedor {
+    display:block;
+}
+
+.contenido {
+    display: flex;
+    justify-content: center;
+
+}
+
+.contenido:nth-child(even) {
+    background-color: var(--gisClaro);
+    flex-direction: row-reverse;
+}
+
+.parrafo {
+    max-width: 40%;
+
+    h2 {
+        font-weight: bold;
+    }
+
+    span {
+        font-weight: bold
+    }
+}
+
+.icono {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote {
+    color: var(--blanco);
+    font-size: 1.5rem;
+    background-color: var(--secundario);
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    p {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.socialnetworks {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
