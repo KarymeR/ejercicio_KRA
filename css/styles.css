@@ -2,7 +2,7 @@
 :root {
     --blanco: #ffffff;
     ---negro: #000000;
-    --primario: #eb3c27;
+    --primario: #091c47;
     --secundario: #515151;
     --gisClaro:  #d3d3d3;
 }
@@ -119,6 +119,7 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: var(--primario);
 }
 
 .quote {
